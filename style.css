@@ -109,10 +109,10 @@ input.text {
         width: 100%;
     }
     .todo-item > div{
-        width: 70%;
+        width: 60%;
     }
     .todo-item > .action-items{
-        width: 30%;
+        width: 35%;
     }
     .action-items i {
         font-size: 10px;
