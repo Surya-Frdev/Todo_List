@@ -108,11 +108,8 @@ input.text {
     .todo-item{
         width: 100%;
     }
-    .todo-item > div{
-        width: 60%;
-    }
-    .todo-item > .action-items{
-        width: 35%;
+    .todo-item {
+        flex-direction: column;
     }
     .action-items i {
         font-size: 10px;
