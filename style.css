@@ -1,0 +1,121 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: #f32e87;
+}
+.main-container{
+    width: 30em;
+    height: 100%;
+    background-color: #3b424b;
+    text-align: center;
+    padding: 40px;
+    margin: 50px auto;
+}
+.heading h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.input-wrapper input {
+    width: 350px;
+    background-color: #292d32;
+    border: none;
+    outline: none;
+    color: #f5f6f7;
+    padding: 6px 8px;
+    font-size: 18px;
+}
+.input-wrapper, .todo-item {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.todo-item{
+    width: 66%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.done {
+    text-decoration: line-through;
+}
+button#submit{
+    width: 100px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    color: #f5f6f7;
+    background-color: #f32e87;
+}
+input.text {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #292d32;
+    font-size: 18px;
+    line-height: 28px;
+    color: #d3d2d2;
+    outline: none;
+}
+.action-items i{
+    font-size: 18px;
+    color: #d3d2d2;
+    cursor: pointer;
+    background-color: #f32e87;
+    padding: 6px;
+    margin-right: 10px;
+}
+.action-items {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-wrapper {
+    margin-bottom: 30px;
+}
+.todo-list {
+    outline: none;
+}
+
+
+
+
+
+
+/* Media Query */
+@media screen and (max-width: 600px){
+    .main-container{
+        width: min(72%, calc(78% + 69px));
+        padding: 26px;
+    }
+    .input-wrapper input{
+        width: 80%;
+    }
+    button#submit{
+        width: 18%;
+    }
+    .input-wrapper {
+        gap: 10px;
+    }
+    .todo-item{
+        width: 100%;
+    }
+    .todo-item > div{
+        width: 70%;
+    }
+    .todo-item > .action-items{
+        width: 30%;
+    }
+}
+
+
+
+
